@@ -1,0 +1,29 @@
+a=int(input("Input a: "))
+b=int(input("Input b: "))
+c=int(input("Input c: "))
+
+min=a
+
+if b<c:
+    if b<min:
+        min=b
+        print("a= ", a)
+        print("b= ", b**2)
+        print("c= ", c)
+    else:
+        print("a= ", a**2)
+        print("b= ", b)
+        print("c= ", c)
+if c<b:
+    if c<min:
+        min=c
+        print("a= ", a)
+        print("b= ", b)
+        print("c= ", c**2)
+    else:
+        print("a= ", a**2)
+        print("b= ", b)
+        print("c= ", c)
+        
+if (a==b) and (b==c):
+    print("All the numbers are equal (", min,")")
